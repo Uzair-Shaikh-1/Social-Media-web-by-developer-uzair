@@ -429,12 +429,12 @@ main .container .left .profile {
     justify-content: space-between;
     align-items: center;
     font-size: 1.4rem;
-    margin: 0.6rem;
+    margin-bottom: 6px;
 }
 
 .middle .liked-by {
     display: flex;
-
+    margin-left: 8px;
 }
 
 .middle .liked-by span {
