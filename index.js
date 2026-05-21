@@ -2,6 +2,7 @@
 
 const menuItems = document.querySelectorAll(".menu-item");
 const messagesNotification = document.querySelector("#messages-notification")
+const Notification = document.querySelector("#notifications")
 const messages = document.querySelector(".messages")
 const message = messages.querySelectorAll(".message")
 const messageSearch = document.querySelector("#message-search")
@@ -42,8 +43,16 @@ menuItems.forEach(item => {
             document.querySelector("#notifications .notification-count").
                 style.display = "none"
         }
-    })
+    });
+
+    if (item.id === "notifications") {
+        item.addEventListener("dblclick", () => {
+            document.querySelector(".notifications-popup").style.display = "none"
+            item.classList.remove("active")
+        })
+    }
 })
+
 
 
 
@@ -214,7 +223,7 @@ bg1.addEventListener("click", () => {
 
 bg2.addEventListener("click", () => {
     lightColorLightness = "15%"
-    whiteColorLightness = "20%%"
+    whiteColorLightness = "20%"
     darkColorLightness = "95%"
 
     //  add active class
@@ -226,7 +235,7 @@ bg2.addEventListener("click", () => {
 })
 bg3.addEventListener("click", () => {
     lightColorLightness = "0%"
-    whiteColorLightness = "10%%"
+    whiteColorLightness = "10%"
     darkColorLightness = "95%"
 
     //  add active class

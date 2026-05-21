@@ -47,6 +47,16 @@ body {
 
 }
 
+.log {
+    color: black;
+}
+
+.para {
+    margin-bottom: 5px;
+    margin-top: 3px;
+    line-height: 16px;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -286,6 +296,11 @@ main .container .left .profile {
     display: block;
 }
 
+.left .notification-body {
+    padding-left: 10px;
+
+}
+
 /* middle  */
 
 .middle .stories {
@@ -477,6 +492,13 @@ main .container .right {
     margin-bottom: 1rem;
 }
 
+.right .search-bar #message-search {
+    border-radius: 25px;
+    background: var(--color-light);
+    padding-left: 10px;
+    color: rgb(172, 17, 17);
+}
+
 .right .messages .category {
     display: flex;
     justify-content: space-between;
@@ -556,11 +578,13 @@ main .container .right {
 .right .request .info {
     display: flex;
     gap: 1rem;
+
 }
 
 .right .request .action {
     display: flex;
     gap: 1rem;
+    margin-top: 8px;
 }
 
 /* ==============================THEME CUSTOMIZATION =============================== */
